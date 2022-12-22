@@ -4,10 +4,11 @@ const errorMiddleware = require("./middlerware/error")
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const fileUpload = require('express-fileupload')
-const dotenv = require('dotenv')
+// const dotenv = require('dotenv')
 const path = require('path')
+import cors from 'cors'
 
-dotenv.config({path:"backend/config/config.env"})
+// dotenv.config({path:"backend/config/config.env"})
 
 
 
@@ -27,6 +28,8 @@ app.use("/api/v1",product);
 app.use("/api/v1",user);
 app.use("/api/v1",order);
 app.use("/api/v1", payment);
+
+app.use(cors())
 
 app.use(express.static(path.join(__dirname,"../frontend/build")));
 app.get("*", (req,res)=>{
