@@ -6,7 +6,6 @@ const cookieParser = require('cookie-parser')
 const fileUpload = require('express-fileupload')
 // const dotenv = require('dotenv')
 const path = require('path')
-import cors from 'cors'
 
 // dotenv.config({path:"backend/config/config.env"})
 
