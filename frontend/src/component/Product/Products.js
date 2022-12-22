@@ -8,6 +8,8 @@ import Slider from "@material-ui/core/Slider";
 import { useAlert } from "react-alert";
 import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
+import Tooltip from '@material-ui/core/Tooltip';
+
 
 const categories = [
   "Laptop",
@@ -19,13 +21,23 @@ const categories = [
   "SmartPhones",
 ];
 
+function ValueLabelComponent(props) {
+  const { children, open, value } = props;
+
+  return (
+    <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
+      {children}
+    </Tooltip>
+  );
+}
+
 const Products = ({ match }) => {
   const dispatch = useDispatch();
 
   const alert = useAlert();
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [price, setPrice] = useState([0, 250000]);
+  const [price, setPrice] = useState([0, 150000]);
   const [category, setCategory] = useState("");
 
   const [ratings, setRatings] = useState(0);
@@ -61,7 +73,7 @@ const Products = ({ match }) => {
 
   return (
     <Fragment>
-          <MetaData title="PRODUCTS -- ECOMMERCE" />
+          <MetaData title="Products - CheckTheDeal" />
           <h2 className="productsHeading">Products</h2>
 
           <div className="products">
@@ -76,10 +88,11 @@ const Products = ({ match }) => {
             <Slider
               value={price}
               onChange={priceHandler}
-              valueLabelDisplay="auto"
-              aria-labelledby="range-slider"
+              // valueLabelDisplay="auto"
+              // aria-labelledby="range-slider"
+              ValueLabelComponent={ValueLabelComponent}
               min={0}
-              max={250000}
+              max={150000}
             />
 
             <Typography>Categories</Typography>
@@ -96,7 +109,7 @@ const Products = ({ match }) => {
             </ul>
 
             <fieldset>
-              <Typography component="legend">Ratings Above</Typography>
+              <Typography component="legend">Ratings</Typography>
               <Slider
                 value={ratings}
                 onChange={(e, newRating) => {

@@ -80,10 +80,12 @@
 .category-link {
   list-style: none;
   color: rgba(0, 0, 0, 0.61);
-  font: 400 0.8vmax "Roboto";
+  font-family: "Roboto";
+  font-size: 0.9rem;
   margin: 0.4vmax;
   cursor: pointer;
   transition: all 0.5s;
+  font-weight: bold;
 }
 .category-link:hover {
   color: #5900b3;
