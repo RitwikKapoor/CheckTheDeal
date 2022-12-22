@@ -87,7 +87,7 @@ function App() {
 
         <Route exact path="/search" component={Search} />
 
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/story" component={Contact} />
 
         <Route exact path="/about" component={About} />
 

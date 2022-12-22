@@ -84,7 +84,7 @@ const Home = () => {
             </div>
 
             <div className="story">
-                <h1>See Our Story <span onClick={() => history.push("/contact")}> here</span></h1>
+                <h1>See Our Story <span onClick={() => history.push("/story")}> here</span></h1>
             </div>
           <Footer />
         </Fragment>
