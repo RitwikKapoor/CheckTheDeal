@@ -17,8 +17,8 @@ import Profile from "./component/User/Profile";
 import ProtectedRoute from "./component/Route/ProtectedRoute";
 import UpdateProfile from "./component/User/UpdateProfile";
 import UpdatePassword from "./component/User/UpdatePassword";
-import ForgotPassword from "./component/User/ForgotPassword";
-import ResetPassword from "./component/User/ResetPassword";
+// import ForgotPassword from "./component/User/ForgotPassword";
+// import ResetPassword from "./component/User/ResetPassword";
 import Cart from "./component/Cart/Cart";
 import Shipping from "./component/Cart/Shipping";
 import ConfirmOrder from "./component/Cart/ConfirmOrder";
@@ -101,28 +101,28 @@ function App() {
           component={UpdatePassword}
         />
 
-        <Route exact path="/password/forgot" component={ForgotPassword} />
+        {/* <Route exact path="/password/forgot" component={ForgotPassword} /> */}
 
-        <Route exact path="/password/reset/:token" component={ResetPassword} />
+        {/* <Route exact path="/password/reset/:token" component={ResetPassword} /> */}
 
         <Route exact path="/login" component={LoginSignUp} />
 
         <Route exact path="/cart" component={Cart} />
 
         <ProtectedRoute exact path="/shipping" component={Shipping} />
-        {/* <Route exact path="/shipping" component={Shipping} /> */}
+
 
         <ProtectedRoute exact path="/success" component={OrderSuccess} />
-        {/* <Route exact path="/success" component={OrderSuccess} /> */}
+
 
         <ProtectedRoute exact path="/orders" component={MyOrders} />
-        {/* <Route exact path="/orders" component={MyOrders} /> */}
+       
 
         <ProtectedRoute exact path="/order/confirm" component={ConfirmOrder} />
-        {/* <Route exact path="/order/confirm" component={ConfirmOrder} /> */}
+     
 
         <ProtectedRoute exact path="/order/:id" component={OrderDetails} />
-        {/* <Route exact path="/order/:id" component={OrderDetails} /> */}
+ 
 
         <ProtectedRoute
           isAdmin={true}
