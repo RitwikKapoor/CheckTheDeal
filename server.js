@@ -3,7 +3,8 @@ const cloudinary = require('cloudinary')
 const connectDatabase = require('./config/database')
 const dotenv = require('dotenv')
 
-dotenv.config()
+// dotenv.config()
+dotenv.config({path:"config/config.env"})
 
 // Handling Uncaught Exception
 process.on("uncaughtException", (err) => {
@@ -33,7 +34,7 @@ cloudinary.config({
 
 
 
-const server = app.listen(process.env.PORT,()=>{
+const server = app.listen(process.env.PORT || 4000 ,()=>{
     console.log(`server is running on http://localhost:${process.env.PORT}`)
 })
 
@@ -54,7 +55,7 @@ process.on("unhandledRejection", (err) => {
 
 
 
-
+// "proxy": "http://localhost:4000"
 
 
 
