@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.44f6f936.chunk.css",
+    "main.js": "/static/js/main.b4046019.chunk.js",
+    "main.js.map": "/static/js/main.b4046019.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.686f288e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.686f288e.js.map",
+    "static/css/2.9af896a7.chunk.css": "/static/css/2.9af896a7.chunk.css",
+    "static/js/2.d13bbbf2.chunk.js": "/static/js/2.d13bbbf2.chunk.js",
+    "static/js/2.d13bbbf2.chunk.js.map": "/static/js/2.d13bbbf2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.9af896a7.chunk.css.map": "/static/css/2.9af896a7.chunk.css.map",
+    "static/css/main.44f6f936.chunk.css.map": "/static/css/main.44f6f936.chunk.css.map",
+    "static/js/2.d13bbbf2.chunk.js.LICENSE.txt": "/static/js/2.d13bbbf2.chunk.js.LICENSE.txt",
+    "static/media/Appstore.d0c58399.png": "/static/media/Appstore.d0c58399.png",
+    "static/media/Profile.697fdcd2.png": "/static/media/Profile.697fdcd2.png",
+    "static/media/bank.f51000fb.jpg": "/static/media/bank.f51000fb.jpg",
+    "static/media/easy.7af0ce5a.jpg": "/static/media/easy.7af0ce5a.jpg",
+    "static/media/fast.47c65e2c.jpg": "/static/media/fast.47c65e2c.jpg",
+    "static/media/Home.css": "/static/media/shop.e52f2211.jpg",
+    "static/media/LoginSignUp.css": "/static/media/login-bag.8e3f5c24.jpg",
+    "static/media/playstore.82b48319.png": "/static/media/playstore.82b48319.png",
+    "static/media/return.f237bc29.jpg": "/static/media/return.f237bc29.jpg",
+    "static/media/warehouse.071b8a04.jpg": "/static/media/warehouse.071b8a04.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.686f288e.js",
+    "static/css/2.9af896a7.chunk.css",
+    "static/js/2.d13bbbf2.chunk.js",
+    "static/css/main.44f6f936.chunk.css",
+    "static/js/main.b4046019.chunk.js"
+  ]
+}
