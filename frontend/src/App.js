@@ -101,7 +101,7 @@ function App() {
 
         <Route exact path="/login" component={LoginSignUp} />
 
-        <Route exact path="/cart" component={Cart} />
+        <ProtectedRoute exact path="/cart" component={Cart} />
 
         <ProtectedRoute exact path="/shipping" component={Shipping} />
 
@@ -177,7 +177,7 @@ function App() {
           component={ProductReviews}
         />
 
-        <Route
+        <ProtectedRoute
           component={
             window.location.pathname === "/process/payment" ? null : NotFound
           }

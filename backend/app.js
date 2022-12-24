@@ -7,7 +7,8 @@ const fileUpload = require('express-fileupload')
 const dotenv = require('dotenv')
 const path = require('path')
 
-dotenv.config()
+// dotenv.config()
+dotenv.config({path:"config/config.env"})
 
 
 
@@ -29,9 +30,9 @@ app.use("/api/v1",order);
 app.use("/api/v1", payment);
 
 
-app.use(express.static(path.join(__dirname,"./frontend/build")));
+app.use(express.static(path.join(__dirname,"../frontend/build")));
 app.get("*", (req,res)=>{
-    res.sendFile(path.resolve(__dirname,"./frontend/build/index.html"))
+    res.sendFile(path.resolve(__dirname,"../frontend/build/index.html"))
 })
 
 // if(process.env.NODE_ENV!=="PRODUCTION"){
